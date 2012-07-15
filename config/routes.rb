@@ -1,4 +1,6 @@
 TestPaper::Application.routes.draw do
+  get "paper/download"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -6,6 +8,8 @@ TestPaper::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   match 'say/hello' => 'say#hello'
+  match 'say/bye' => 'say#goodbye'
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)

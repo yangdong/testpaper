@@ -1,9 +1,9 @@
-<html>
-<head>
-	<title>Say Hello</title>
-</head>
-<body>
-	<h1>Hello World!</h1>
-	<p><%= @time %></p>
-</body>
-</html>
+<h1>Hello World!</h1>
+<p><%= @time %></p>
+<p>It is time to say <a href="/say/bye">Goodbye!</a></p>
+<p>Root:</p>
+<ul>
+  <% for file in Dir.glob '*' %>
+      <li>/<%= file %></li>
+  <% end %>
+</ul>
