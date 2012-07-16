@@ -1,0 +1,7 @@
+<h1>Welcome</h1>
+It's <%= Time.now %>
+We have <%= pluralize(@total_orders, "order") %>.
+<div class="login_user">
+  <span><%= session[:user].name %></span>
+  <a class="logout" href="/">Logout</a>
+</div>
