@@ -1,7 +1,13 @@
-<div class="login">
-  <%= form_tag do %>
-      <%= text_field_tag :name, params[:name], :placeholder => 'Username or email', :class => 'username' %>
-      <%= password_field_tag :password, params[:password], :placeholder => 'Password', :class => 'password' %>
-      <%= submit_tag "Login", :class => 'submit'%>
-  <% end %>
+<div class="welcome">
+  <div class="branding">
+    <%= image_tag image_path('test-paper.jpeg') %>
+  </div>
+
+  <div class="login">
+    <%= form_tag do %>
+        <%= text_field_tag :name, params[:name], :placeholder => 'Username or email', :class => 'username' %>
+        <%= password_field_tag :password, params[:password], :placeholder => 'Password', :class => 'password' %>
+        <%= submit_tag "Login", :class => 'submit' %>
+    <% end %>
+  </div>
 </div>

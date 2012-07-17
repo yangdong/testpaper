@@ -10,7 +10,6 @@ TestPaper::Application.routes.draw do
   end
 
   resources :users
-  get "paper/download"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
