@@ -6,12 +6,12 @@ class SessionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get create" do
-    get :create
+  test "should login successful" do
+    post :create, {:name => 'YangDong', :password => 'Password'}
     assert_response :success
   end
 
-  test "should get destroy" do
+  test "should logout" do
     get :destroy
     assert_response :success
   end

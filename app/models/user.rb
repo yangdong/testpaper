@@ -1,5 +1,3 @@
-require 'digest/sha2'
-
 class User < ActiveRecord::Base
 
   def self.authenticate(name, password)
