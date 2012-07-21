@@ -1,0 +1,5 @@
+#!/bin/sh
+
+bundle install
+rake db:create:all
+rake db:migrate
