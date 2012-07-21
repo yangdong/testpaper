@@ -8,7 +8,7 @@ class SessionsControllerTest < ActionController::TestCase
 
   test "should login successful" do
     post :create, {:name => 'YangDong', :password => 'Password'}
-    assert_response :success
+    assert_response 302
   end
 
   test "should logout" do
