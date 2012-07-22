@@ -11,3 +11,27 @@
  *= require_self
  *= require_tree .
  */
+body {
+    margin: 0 auto 0;
+    height: 100%;
+    min-width: 960px;
+}
+
+.header {
+    background: -moz-linear-gradient(top, #65C9EA, #5BBECD);
+    background: -webkit-gradient(linear, left top, left bottom, from(#65C9EA), to(#5BBECD));
+    line-height: 40px;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+.header .container {
+    width: 960px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+.brand {
+    font-family: Monaco;
+    font-size: 20px;
+}

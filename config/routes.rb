@@ -6,7 +6,7 @@ TestPaper::Application.routes.draw do
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
-    delete 'logout' => :destroy
+    get 'logout' => :destroy
   end
 
   resources :users
