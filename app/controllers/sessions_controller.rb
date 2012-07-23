@@ -2,7 +2,9 @@ class SessionsController < ApplicationController
   skip_before_filter :require_login, :only => [:new, :create]
 
   def new
-
+    if session[:user]
+      redirect_to admin_url
+    end
   end
 
   def create
@@ -16,6 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user] = nil
-    redirect_to login_url
+    redirect_to login_url, :status => 200
   end
 end
