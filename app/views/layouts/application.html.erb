@@ -11,12 +11,20 @@
   <div class="container">
     <span class="brand">testpaper</span>
 
-    <div class="user">
-      <% if session[:user] %>
-          <span><%= session[:user].name %></span>
-          <a class="logout" href="/logout">Logout</a>
-      <% end %>
+  <% if session[:user] %>
+    <div class="context">
+      <div class="user">
+            <span><%= session[:user].name %></span>
+            <a class="logout" href="/logout">Logout</a>
+      </div>
+
+      <ul class="menu">
+        <li>
+          <a class="create" href="#">New</a>
+        </li>
+      </ul>
     </div>
+  <% end %>
   </div>
 </div>
 <%= yield %>

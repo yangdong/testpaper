@@ -35,8 +35,15 @@ body {
     font-size: 20px;
 }
 
-.user {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.context {
+    float: right;
 }
+
+.user, .menu {
+    display: inline-block;
+}
+
+.menu li {
+    list-style: none;
+}
+

@@ -18,6 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user] = nil
-    redirect_to login_url, :status => 200
+    redirect_to login_url, :status => 302
   end
 end
