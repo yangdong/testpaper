@@ -1,8 +1,8 @@
 <div class="createpaper">
 	<%= form_tag do %>
-	    <label for="name">Test paper name</label>
+	    <label for="name" class="papername_label">Test paper name</label>
 	    <%= text_field_tag :name, '', :class => 'papername' %>
-	    <label for="description">Description</label>
+	    <label for="description" class="desctiption_label">Description <span class="optional">(optional)</span></label>
 	    <%= text_field_tag :description, '', :class => 'description' %>
 	    <%= submit_tag "Create Paper", :class => 'createbutton' %>
 	<% end %>
