@@ -9,6 +9,10 @@ TestPaper::Application.routes.draw do
     get 'logout' => :destroy
   end
 
+  controller :paper do
+    get 'new' => :new
+  end
+
   resources :users
 
   # The priority is based upon order of creation:

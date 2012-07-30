@@ -9,25 +9,26 @@
 <body>
 <div class="header">
   <div class="container">
-    <span class="brand">testpaper</span>
+    <div class="brand">testpaper</div>
 
   <% if session[:user] %>
-    <div class="context">
+    <div class="userbox">
       <div class="user">
             <span><%= session[:user].name %></span>
             <a class="logout" href="/logout">Logout</a>
       </div>
 
-      <ul class="menu">
-        <li>
-          <a class="create" href="#">New</a>
-        </li>
-      </ul>
+        <ul class="menu">
+          <li>
+            <a class="create" href="/new">New</a>
+          </li>
+        </ul>
     </div>
   <% end %>
   </div>
 </div>
-<%= yield %>
-
+<div class="body">
+  <%= yield %>
+</div>
 </body>
 </html>
