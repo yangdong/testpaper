@@ -11,6 +11,7 @@ TestPaper::Application.routes.draw do
 
   controller :paper do
     get 'new' => :new
+    post 'new' => :create
   end
 
   resources :users
