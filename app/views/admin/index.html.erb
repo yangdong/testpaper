@@ -1,2 +1,7 @@
 <div class="body">
+  <ul>
+    <% @papers.each do |paper| %>
+        <li><%= paper.name %> : <%= paper.description %></li>
+    <% end %>
+  </ul>
 </div>

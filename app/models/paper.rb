@@ -1,5 +1,6 @@
 class Paper < ActiveRecord::Base
-  belongs_to :user
-  attr_accessible :description, :name
+  attr_accessible :description, :name, :user_id
   validates :name, :uniqueness => true
+
+  belongs_to :user, :foreign_key => :user_id
 end

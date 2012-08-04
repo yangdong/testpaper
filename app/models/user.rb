@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
   has_many :papers
   
   def self.authenticate(name, password)
