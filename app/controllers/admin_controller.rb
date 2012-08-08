@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
   def index
-    @papers = Paper.find_all_by_user_id(session[:user].id)
+  	user = User.find_by_name(session[:user].name)
+  	@papers = user.papers
   end
 end

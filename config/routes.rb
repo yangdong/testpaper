@@ -10,8 +10,9 @@ TestPaper::Application.routes.draw do
   end
 
   controller :paper do
-    get 'new' => :new
-    post 'new' => :create
+    get 'paper/new' => :new
+    post 'paper/new' => :create
+    get 'paper/:name' => :show
   end
 
   resources :users
@@ -22,8 +23,6 @@ TestPaper::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-  match 'say/hello' => 'say#hello'
-  match 'say/bye' => 'say#goodbye'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

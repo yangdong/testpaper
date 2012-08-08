@@ -3,7 +3,9 @@
 <head>
   <title>TestPaper</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "paper" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -20,7 +22,7 @@
 
         <ul class="menu">
           <li>
-            <a class="create" href="/new">New</a>
+            <a class="create" href="/paper/new">New</a>
           </li>
         </ul>
     </div>

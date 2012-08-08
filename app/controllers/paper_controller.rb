@@ -10,6 +10,10 @@ class PaperController < ApplicationController
     })
 
     paper.save
-    redirect_to admin_url, status => 302
+    redirect_to admin_path, status => 302
+  end
+
+  def show
+    @paper = Paper.find_by_name params[:name]
   end
 end
