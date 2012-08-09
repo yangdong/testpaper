@@ -1,7 +1,10 @@
 <div class="body">
-  <ul>
+  <ul class="papers">
     <% @papers.each do |paper| %>
-        <li><%= paper.name %> : <%= paper.description %></li>
+        <li>
+        	<div class="name"><%= link_to paper.name, :controller => "paper", :action => "show", :name => paper.name %><div>
+        	<div class="description"><%= paper.description %></div>
+        </li>
     <% end %>
   </ul>
 </div>
