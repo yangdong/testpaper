@@ -1,0 +1,1 @@
+$(document).ready () -> $('.add_paper_part').click () -> $('.part1').append($('<div>').html('question set'))
