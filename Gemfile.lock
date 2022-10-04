@@ -61,7 +61,7 @@ GEM
       fastthread (>= 1.0.1)
       rack
       rake (>= 0.8.1)
-    pdfkit (0.5.2)
+    pdfkit (0.8.7)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -116,7 +116,7 @@ DEPENDENCIES
   jquery-rails
   mysql
   passenger
-  pdfkit (= 0.5.2)
+  pdfkit (= 0.8.7)
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
