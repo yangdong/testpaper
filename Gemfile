@@ -7,6 +7,6 @@ group :assets do
 end
 gem 'jquery-rails'
 gem 'wkhtmltopdf-binary', '0.9.9.1'
-gem 'pdfkit', '0.5.2'
+gem 'pdfkit', '0.8.7.2'
 gem 'mysql'
 gem 'passenger'
